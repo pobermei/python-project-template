@@ -59,7 +59,7 @@ def lint_pylint(session):
     """
     Run pylint.
     """
-    session.install("-e", ".[lint_pylint]")
+    session.install("-e", ".[lint-pylint]")
     session.run("pylint", "fillname", "tests")
 
 
